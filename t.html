@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Search with Recipes</title>
+<link rel="stylesheet" href="t.css">
+</head>
+<body>
+  <h2>Search Food Images & Recipes</h2>
+  <input type="text" id="search-box" placeholder="Search for coffee, pizza, burger..." onkeyup="showSuggestions(this.value)">
+  <div id="suggestions"></div>
+
+  <!-- Gallery -->
+  <div class="gallery" id="gallery">
+    <img src="c:\Users\welcome\Pictures\burgers.jpg" alt="burger" class="small-img" data-name="burger" onclick="toggleIngredients('burger')">
+    <img src="c:\Users\welcome\Pictures\pizza.jpg" alt="pizza" class="small-img" data-name="pizza" onclick="toggleIngredients('pizza')">
+  <img src="c:\Users\welcome\Pictures\hotdog.jpg" alt="Hot Dog" class="small-img" data-name="hot dog" onclick="toggleIngredients('Hot dog')">
+
+  </div>
+
+  <!-- Ingredients Sections -->
+  <div id="ingredients-section">
+    <div id="cappuccino" class="ingredients">
+      <h2>cappuccino Ingredients</h2>
+      <ul>
+        <li>Espresso-1 shot(about 30ml)</li>
+        <li>Steamed milk-1/3 of the cup</li>
+        <li>Milk foam-1/3 of the cup</li>
+        <li>Cocoa powder or cinnamon(for dusting on top)</li>
+        <li>Sugar or flavored syrup if you like it sweeter</li>
+      </ul>
+      <h3>Watch cappuccino Recipe</h3>
+      <a href="https://www.youtube.com/results?search_query=coffee+recipe" target="_blank">Click here</a>
+    </div>
+
+    <div id="burger" class="ingredients">
+      <h2>Burger Ingredients</h2>
+      <ul>
+        <li>Burger buns</li>
+        <li>Beef patty or veggie patty</li>
+        <li>Cheese</li>
+        <li>Lettuce, Tomato, Onion</li>
+        <li>Sauce (ketchup, mayo, etc.)</li>
+      </ul>
+      <h3>Watch Burger Recipe</h3>
+      <a href="https://www.youtube.com/results?search_query=burger+recipe" target="_blank">Click here</a>
+    </div>
+
+
+
+
+    <div id="pizza" class="ingredients">
+      <h2>Pizza Ingredients</h2>
+      <ul>
+        <li>Pizza dough</li>
+        <li>Tomato sauce</li>
+        <li>Cheese</li>
+        <li>Toppings (pepperoni, veggies, etc.)</li>
+      </ul>
+      <h3>Watch Pizza Recipe</h3>
+      <a href="https://www.youtube.com/results?search_query=pizza+recipe" target="_blank">Click here</a>
+    </div>
+    
+
+
+  <div id="Hot dog" class="ingredients">
+    <h2>Hot Dog Ingredients</h2>
+    <ul>
+      <li>Hot dog buns</li>
+      <li>Hot dog sausages</li>
+      <li>Ketchup & mustard</li>
+      <li>Chopped onions</li>
+      <li>Relish or pickles</li>
+      <li>Cheese (optional)</li>
+      <li>Butter for toasting buns</li>
+    </ul>
+    <h3>Watch Hot Dog Recipe</h3>
+    <a href="https://www.youtube.com/watch?v=example" target="_blank">
+      Click here 
+    </a>
+  </div>
+  </div>
+  <div class="title">
+  <bold> FRESH JUICES </bold></div>
+  <div class="gallery" id="gallery">
+  <img src="c:\Users\welcome\Pictures\orange.jpg" alt="orange juice" class="small-img" data-name="orange juice" onclick="toggleIngredients('orange juice')">
+  <img src="c:\Users\welcome\Pictures\juice.jpg" alt="Lemon Lime soda" class="small-img" data-name="lemon lime soda" onclick="toggleIngredients('lemon lime soda')">
+  <img src="c:\Users\welcome\Pictures\badham.jpg" alt="badam dooth" class="small-img" data-name="badam dooth" onclick="toggleIngredients('badam dooth')">  
+</div>
+<div id="ingredients-section">
+  <div id="lemon lime soda" class="ingredients">
+    <h2>Lemon Lime Soda Ingredients</h2>
+    <ul>
+      <li>Lemon juice – 2 tbsp</li>
+      <li>Fresh lime juice – 1 tbsp</li>
+      <li>Sugar – 2 tsp (or to taste)</li>
+      <li>Cold soda water – 1 cup</li>
+      <li>Ice cubes – as needed</li>
+      <li>Mint leaves – for garnish</li>
+    </ul>
+    <h3>Watch Lemon Lime Soda Recipe</h3>
+    <a href="https://www.youtube.com/watch?v=exampleLemonLime" target="_blank">
+      Click here to watch on YouTube
+    </a>
+  </div>
+<div id="orange juice" class="ingredients">
+  <h2>orange juice ingredients</h2>
+  <ul>
+    <li>oranges</li>
+    <li>water(optional)</li>
+    <li>sugar/honey(optional)</li>
+    <li>lemon juice(optional)</li>
+    <li>Ginger(optional)</li>
+  </ul>
+  <h3>WATCH ORANGE JUICE INGREDIENTS RECIPES</h3>
+  <a href="https://youtu.be/Km5l5926_Ig?si=XuZDNgBC0fWhU3xU" target="_blank">click here to watch your recipes</a>
+</div>
+<div id="badam dooth" class="ingredients">
+  <h2>DADAM DOODH INGREDEINTS</h2>
+  <ul>
+<li>1/4 cup (about 20–24) raw whole almonds</li>
+<li>2 cups milk (whole milk works best)</li>
+<li>4 tablespoons sugar, or to taste</li>
+<li>Seeds from 4 green cardamom pods, or 1/8 tsp cardamom powder</li>
+<li>1 pinch saffron strands (optional)</li>
+<li>Toasted or slivered almonds/pistachios for garnish</li>
+  </ul>
+      <h3>badam dooth Recipe</h3>
+    <a href="https://share.google/YuOuJ6yMPbjZnRUDV" target="_blank">
+      Click here to watch on YouTube
+    </a>
+</div>
+</div>
+<div class="title">
+  <bold> DESSERTS </bold></div>
+  <div id="ingredients-section">
+  <div class="gallery" id="gallery">
+  <img src="c:\Users\welcome\Pictures\red velvet cake.jpg" alt="Red Velvet Cake" class="small-img" data-name="red velvet cake" onclick="toggleIngredients('red velvet cake')" class="small-img" data-name="red velvet cake" >
+    <img src="c:\Users\welcome\Pictures\blueberrycake.jpg"  class="small-img" alt="blueberry buckle" data-name="blueberry buckle" onclick="toggleIngredients('blueberry buckle')">
+    <img src="c:\Users\welcome\Pictures\cheese.jpg"  class="small-img" alt="cheesecake" data-name="cheesecake" onclick="toggleIngredients('cheesecake')">
+
+</div>
+  <div id="red velvet cake" class="ingredients">
+    <h2>Red Velvet Cake Ingredients</h2>
+    <ul>
+      <li>All-purpose flour</li>
+      <li>Sugar</li>
+      <li>Unsweetened cocoa powder</li>
+      <li>Baking soda</li>
+      <li>Salt</li>
+      <li>Vegetable oil</li>
+      <li>Buttermilk</li>
+      <li>Eggs</li>
+      <li>Red food coloring</li>
+      <li>Vanilla extract</li>
+      <li>White vinegar</li>
+      <li>Cream cheese (for frosting)</li>
+      <li>Butter (for frosting)</li>
+      <li>Powdered sugar (for frosting)</li>
+    </ul>
+    <h3>Watch Red Velvet Cake Recipe</h3>
+    <a href="https://www.youtube.com/watch?v=example-red-velvet" target="_blank">
+      Click here to watch on YouTube
+    </a>
+</div>
+<div id="blueberry buckle" class="ingredients">
+      <h2>Blueberry Buckle Ingredients</h2>
+      <ul>
+        <li>All-purpose flour</li>
+        <li>Sugar</li>
+        <li>Baking powder</li>
+        <li>Salt</li>
+        <li>Butter (unsalted)</li>
+        <li>Eggs</li>
+        <li>Milk or buttermilk</li>
+        <li>Vanilla extract</li>
+        <li>Fresh or frozen blueberries</li>
+        <li>Optional topping: cinnamon sugar streusel</li>
+      </ul>
+      <h3>Watch Blueberry Buckle Recipe</h3>
+      <a href="https://www.youtube.com/watch?v=example-blueberry-buckle" target="_blank">Click here</a>
+    </div>
+
+  <!-- Carrot Cheesecake Ingredients Section -->
+  <div id="cheesecake" class="ingredients">
+    <h2>Carrot Cheesecake Ingredients</h2>
+    <ul>
+      <li>Digestive biscuits or graham crackers (for base)</li>
+      <li>Unsalted butter (for base)</li>
+      <li>Cream cheese</li>
+      <li>Grated carrots</li>
+      <li>Sugar</li>
+      <li>Vanilla extract</li>
+      <li>Whipped cream or heavy cream</li>
+      <li>Optional toppings: walnuts, cinnamon, caramel drizzle</li>
+    </ul>
+
+    <h3>Watch Carrot Cheesecake Recipe</h3>
+    <a href="https://www.youtube.com/watch?v=example-carrot-cheesecake" target="_blank">
+      Click here to watch on YouTube
+    </a>
+
+  </div>
+
+<div class="title">
+  <bold>CAFES</bold></div>
+  <div class="gallery" id="gallery">
+    <img src="c:\Users\welcome\Pictures\new.jpg" alt="cappuccino"  width="800px" height="400px" data-name="cappuccino" onclick="toggleIngredients('cappuccino')">
+    <img src="c:\Users\welcome\Pictures\mango.jpg" alt="mango boba"  width="800px" height="400px" data-name="mango boba" onclick="toggleIngredients('mango boba')">
+  <img src="c:\Users\welcome\Pictures\amer.jpg" alt="americano" width="800px"  height="400px"   data-name="americano" onclick="toggleIngredients('americano')">
+  </div>
+    <div id="ingredients-section">
+    <div id="mango boba" class="ingredients">
+  <h2>mango boba ingredients</h2>
+  <ul>
+  <li>tapioca pearls</li>
+  <li>mango</li>
+  <li>milk</li>
+  <li>tea(optional)</li>
+  <li>honey,sugar,serup(optional)</li>
+  </ul>
+  <h3>mango boba tea Recipe</h3>
+    <a href="https://youtu.be/lepgD9bfmdU?si=SM7rPjSLBtvNt4MP" target="_blank">
+      Click here to watch on YouTube
+    </a>
+    </div>
+      <div id="ingredients-section">
+    <div id="cappuccino" class="ingredients">
+      <h2>cappuccino Ingredients</h2>
+      <ul>
+        <li>Espresso-1 shot(about 30ml)</li>
+        <li>Steamed milk-1/3 of the cup</li>
+        <li>Milk foam-1/3 of the cup</li>
+        <li>Cocoa powder or cinnamon(for dusting on top)</li>
+        <li>Sugar or flavored syrup if you like it sweeter</li>
+      </ul>
+      <h3>Watch cappuccino Recipe</h3>
+      <a href="https://www.youtube.com/results?search_query=coffee+recipe" target="_blank">Click here</a>
+    </div>
+    <div id="Americano" class="ingredients">
+  <h2>americano recipe</h2>
+  <!-- Americano Image -->
+  <img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/jpg.jpg" alt="Americano" onclick="toggleAmericanoIngredients()">
+
+    <h2>Americano Ingredients</h2>
+    <ul>
+      <li>Espresso – 1 or 2 shots (25–35 ml each)</li>
+      <li>Hot water – 90–120 ml (to taste)</li>
+      <li>Optional: sugar or milk</li>
+    </ul>
+</div>
+  </div>
+  <script src="t.js"></script>
+</body>
+</html>

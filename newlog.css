@@ -1,0 +1,42 @@
+body {
+      font-style: ALEX BLUSH;
+      margin: 0; padding: 0;
+      background: url("https://via.placeholder.com/1200x800?text=Food+Background") no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url(../../Pictures/hen.jpg);
+    }
+    .login-box {
+      background: transparent;
+
+      padding: 30px;
+      border-radius: 22px;
+      text-align: center;
+      color: whitesmoke;
+      width: 300px;
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: transparent;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: white;
+    }

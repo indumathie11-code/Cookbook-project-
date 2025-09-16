@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    transition: all 0.5s linear;
+    color: #fff;
+    text-transform: capitalize;
+}
+body{
+    background-color: #1a1110;
+    font-family: "Lato", sans-serif;
+}
+header{
+    position: relative;
+    padding: 1em 0;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../Pictures/dp.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 400;
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+    margin-right: 1%;
+}
+.navbar{
+    width: 100%;
+    padding: 2rem 3rem;
+    margin: auto;
+    display: flex;
+    align-items: horizontal;
+    justify-content: space-between;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+.navbar.scrolled{
+    background-color: darkslategrey;
+    box-shadow: rgba(0,0,0,0.3s) 0 5px 15px;
+}
+.nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex:1;
+}
+.item{
+    display: flex;
+    justify-content:right;
+}
+.nav_items li{
+    list-style: none;
+    padding: 2em;
+    display: inline-block;
+}
+.nav_items li a{
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.nav_items li::before{
+    content:'';
+    width: 0;
+    height: 2px;
+    background:darkred;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_items li:hover::before{
+    width: 100%;
+}
+.btn{
+    position: absolute;
+    top: 50% ;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: darkred;
+    border: #1a1110;
+    line-height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px #343a40;
+    box-shadow: 0 0 1em 0.1cm;
+}
+.nav_menu{
+    display: none;
+}
+.main{
+    width: 80%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #fff;
+}
+.heading_1{
+    font-size: 2.3em;
+    font-variant: small-caps ;
+}
+.heading{
+    font-size: 3.5em;
+    padding: 2%;
+    font-family:'Brush Script MT',cursive;
+    font-style: ALEX BRUSH;
+    position: relative;
+}
+.main_btn{
+    display: flex;
+}
+.btn1:hover{
+    background-color: transparent;
+}
+.btn2{
+    background-color: transparent;
+    margin-left: 1%;
+    align-items: center;
+    display: flex;
+}
+.btn2 i{
+    font-size: 2em;
+    margin-right: 6px;
+    color: transparent
+}
+.btn2:hover{
+    background-color: darkred;
+}
+.btn:hover i{
+    color:#fff
+}
+button:hover .stars{
+    display: block;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+/*----------custom scrollbar----------*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#642bff,#ff22e6);
+}
+/*---about */
+.about_heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6em;
+    align-items: center;
+}
+.about .heading_1,
+.about_heading{
+    grid-column: 1;
+    text-align: center;
+    font-variant: small-caps;
+}
+.about .para{
+    grid-column: 2;
+    text-align: right;
+}
+.h4{
+    font-style: italic;
+    font-size: small;
+    text-decoration: color-mix(in wr, color 12, color 13);
+    text-align: right;
+}
+.h3{
+    text-align: right;
+
+}
+/*------------------------contact-------------------*/
+.contact{
+    margin-top: 6%;
+    width: 100%;
+    background-color: #1a1110;
+}
+.contact_box{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+.left_box .heading_1{
+    color: transparent;
+}
+.right_box{
+    text-align: right;
+}
+.services{
+    text-align: right;
+    position: sticky;
+}
